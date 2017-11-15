@@ -1,0 +1,14 @@
+@mixin make-big-grid-columns($i: 1, $list: ".col-hd-#{$i}, .col-fhd-#{$i}, .col-rt-#{$i}, .col-rt15-#{$i}, .col-4k-#{$i}, .col-5k-#{$i}, .col-8k-#{$i}") {
+	@for $i from (1 + 1) through $grid-columns {
+		$list: "#{$list}, .col-hd-#{$i}, .col-fhd-#{$i}, .col-rt-#{$i}, .col-rt15-#{$i}, .col-4k-#{$i}, .col-5k-#{$i}, .col-8k-#{$i}";
+	}
+
+	#{$list} {
+		position: relative;
+		// Prevent columns from collapsing when empty
+		min-height: 1px;
+		// Inner gutter via padding
+		padding-left: ceil(($grid-gutter-width / 2));
+		padding-right: floor(($grid-gutter-width / 2));
+	}
+}

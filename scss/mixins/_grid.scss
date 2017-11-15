@@ -1,0 +1,189 @@
+// Grid system
+@mixin make-hd-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-hd-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-hd-column-offset($columns) {
+	@media (min-width: $screen-hd-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-hd-column-push($columns) {
+	@media (min-width: $screen-hd-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-hd-column-pull($columns) {
+	@media (min-width: $screen-hd-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
+
+@mixin make-fhd-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-fhd-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-fhd-column-offset($columns) {
+	@media (min-width: $screen-fhd-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-fhd-column-push($columns) {
+	@media (min-width: $screen-fhd-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-fhd-column-pull($columns) {
+	@media (min-width: $screen-fhd-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
+
+@mixin make-rt-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-rt-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-rt-column-offset($columns) {
+	@media (min-width: $screen-rt-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-rt-column-push($columns) {
+	@media (min-width: $screen-rt-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-rt-column-pull($columns) {
+	@media (min-width: $screen-rt-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
+
+@mixin make-rt15-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-rt15-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-rt15-column-offset($columns) {
+	@media (min-width: $screen-rt15-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-rt15-column-push($columns) {
+	@media (min-width: $screen-rt15-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-rt15-column-pull($columns) {
+	@media (min-width: $screen-rt15-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
+
+@mixin make-4k-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-4k-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-4k-column-offset($columns) {
+	@media (min-width: $screen-4k-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-4k-column-push($columns) {
+	@media (min-width: $screen-4k-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-4k-column-pull($columns) {
+	@media (min-width: $screen-4k-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
+
+@mixin make-5k-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-5k-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-5k-column-offset($columns) {
+	@media (min-width: $screen-5k-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-5k-column-push($columns) {
+	@media (min-width: $screen-5k-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-5k-column-pull($columns) {
+	@media (min-width: $screen-5k-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
+
+@mixin make-8k-column($columns, $gutter: $grid-gutter-width) {
+	position: relative;
+	min-height: 1px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+
+	@media (min-width: $screen-8k-min) {
+		float: left;
+		width: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-8k-column-offset($columns) {
+	@media (min-width: $screen-8k-min) {
+		margin-left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-8k-column-push($columns) {
+	@media (min-width: $screen-8k-min) {
+		left: percentage(($columns / $grid-columns));
+	}
+}
+@mixin make-8k-column-pull($columns) {
+	@media (min-width: $screen-8k-min) {
+		right: percentage(($columns / $grid-columns));
+	}
+}
